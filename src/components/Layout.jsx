@@ -16,19 +16,17 @@ const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Overview', href: '/' },
-      { title: 'Cost', href: '/docs/cost' },
-      { title: 'Modules', href: '/docs/modules' },
+      { title: 'Cost', href: '/docs/introduction-cost' },
+      { title: 'Modules', href: '/docs/introduction-modules' },
     ],
   },
   {
     title: 'Setup',
     links: [
       { title: 'Overview', href: '/docs/setup-overview' },
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
-      {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
-      },
+      { title: 'AWS Hosted', href: '/docs/setup-aws-hosted' },
+      { title: 'AND Hosted', href: '/docs/setup-and-hosted'},
+      { title: 'Self Hosted', href: '/docs/setup-self-hosted'},
     ],
   },
   {

@@ -1,23 +1,47 @@
 ---
-title: Cost
+title: Overview
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
-If you are completing this workshop at an AWS event, you are provided with a temporary AWS account and there is no cost to you. The resources will be automatically deleted after the workshop, so you do not need to perform any clean up.
+## Overview
 
-If you are deploying this workshop in your own AWS account, you will be responsible for the costs incurred by the application. Most of the service usage is covered by the [AWS Free Tier](https://aws.amazon.com/free/) for eligible accounts. To minimize ongoing cost after the workshop, follow the steps in the *Clean up* section to delete resources.
+The Serverlesspresso application consists of three frontends and a backend application. The frontends are already built and deployed in an AWS-owned account. Some of backend resources will be pre-deployed into your workshop account during the [AWS Hosted](../docs/setup-aws-hosted.md) or [Self Hosted](../docs/setup-self-hosted.md) sections.
 
-If run in production for 1,000 customers a day, the expected costs for running the application are:
+[![See Serverlesspresso](/setup-overview-1.png)](https://youtu.be/M6lPZCRCsyA)
 
-Service | Daily cost | With AWS Free Tier
------------- | ------------- | -------------
-AWS Amplify Console | $0.28 | Free
-Amazon API Gateway | $0.01 | Free
-Amazon Cognito | Free | Free
-Amazon DynamoDB | $0.01 | Free
-Amazon EventBridge | $0.01 | Free
-AWS IoT Core | $0.01 | Free
-AWS Lambda | $0.01 | Free
-AWS Step Functions | $0.29 | Free
+The backend is a set of serverless microservices:
 
-Note that these estimates are only a guide.
+* The *Counting* microservice - Uses an [Amazon DynamoDB](https://aws.amazon.com/dynamodb) table for incrementing order numbers sequentially.
+* The *OrderManager* microservice - Provides an API to send/update/cancel a coffee order. Consists of a DynamoDB table containing the state of each customer order.
+* The *Config* microservice - Uses a DynamoDB table containing information about menu items and shop status, along with an [Amazon API Gateway](https://aws.amazon.com/apigateway) resource to provide authenticated access.
+* The *Publisher* microservice - Routes events to different IoT core topics. IoT Core publishes event messages to front-end applications.
+* The *QR Validator* microservice - Provides QR codes to front end display application, Codes are sorted in a DynamoDB table and used to validate each order.
+
+In the following sections, you will fill in the missing pieces in the diagram above:
+
+[![See Serverlesspresso](/setup-overview-2.png)](https://youtu.be/M6lPZCRCsyA)
+
+* The *OrderProcessor* microservice - an [AWS Step Functions](https://aws.amazon.com/stepfunctions) Workflow, that orchestrates each customer order from start to completion
+* The event routing logic routes events to the correct downstream service (consumer).
+
+Once you have built the back-end resources needed, you will update the front-end application configuration to query the API Gateway endpoint and display the information about all the current menu and order status.
+
+Each of the following sections provides an implementation overview and detailed, step-by-step instructions.
+
+{% callout title="You should know!" %}
+Please ensure that you follow the instructions in the order listed.
+{% /callout %}
+
+### Recap
+
+* You followed ONE of:
+* AWS Hosted -  You logged into a temporary AWS account, with some backend resources pre-deployed.
+* Self Hosted - You deployed the core resources template into your own AWS account.
+
+### Next steps
+
+In the next module, you'll learn about workflows and state machines, and build the main workflow that powers the application.
+
+{% callout type="success" title="You should know!" %}
+Now you are ready to start building 👷
+{% /callout %}

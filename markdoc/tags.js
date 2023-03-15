@@ -1,14 +1,28 @@
+import { Button } from '@/components/Button'
 import { Callout } from '@/components/Callout'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 
 const tags = {
+  button: {
+    attributes: {
+      text: { type: String },
+      variant: {
+        type: String,
+        default: 'primary',
+        matches: ['primary', 'secondary'],
+        errorLevel: 'critical',
+      },
+      href: { type: String }
+    },
+    render: Button,
+  },
   callout: {
     attributes: {
       title: { type: String },
       type: {
         type: String,
         default: 'note',
-        matches: ['note', 'warning'],
+        matches: ['note', 'warning', 'success'],
         errorLevel: 'critical',
       },
     },
