@@ -36,20 +36,18 @@ const navigation = [
       { title: 'Creating the workflow', href: '/docs/1a-building-workflow-creating-workflow' },
       { title: 'Is the shop open?', href: '/docs/1a-building-workflow-is-shop-open' },
       { title: 'Is there capacity?', href: '/docs/1a-building-workflow-is-there-capacity' },
-      { title: 'Module review', href: '/docs/1a-building-workflow-module-review' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
+      { title: 'Module review', href: '/docs/1a-building-workflow-module-review' }
     ],
   },
   {
     title: '1b. Building the workflow - Part 2',
     links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
+      { title: 'Overview', href: '/docs/1b-building-workflow-creating-workflow-overview' },
+      { title: 'Adding an order number', href: '/docs/1b-building-workflow-creating-workflow-adding-order-number' },
+      { title: 'Waiting for the order', href: '/docs/1b-building-workflow-creating-workflow-waiting-for-order' },
+      { title: 'Emitting events', href: '/docs/1b-building-workflow-creating-workflow-emitting-events' },
+      { title: 'Testing', href: '/docs/1b-building-workflow-creating-workflow-testing' },
+      { title: 'Module review', href: '/docs/1b-building-workflow-creating-module-review' },
     ],
   },
   {
