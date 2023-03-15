@@ -32,11 +32,11 @@ const navigation = [
   {
     title: '1a. Building the workflow - Part 1',
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
+      { title: 'Overview', href: '/docs/1a-building-workflow-overview' },
+      { title: 'Creating the workflow', href: '/docs/1a-building-workflow-creating-workflow' },
+      { title: 'Is the shop open?', href: '/docs/1a-building-workflow-is-shop-open' },
+      { title: 'Is there capacity?', href: '/docs/1a-building-workflow-is-there-capacity' },
+      { title: 'Module review', href: '/docs/1a-building-workflow-module-review' },
       {
         title: 'Predictive data generation',
         href: '/docs/predictive-data-generation',
