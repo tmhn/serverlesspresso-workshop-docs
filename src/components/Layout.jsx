@@ -42,20 +42,24 @@ const navigation = [
   {
     title: '1b. Building the workflow - Part 2',
     links: [
-      { title: 'Overview', href: '/docs/1b-building-workflow-creating-workflow-overview' },
-      { title: 'Adding an order number', href: '/docs/1b-building-workflow-creating-workflow-adding-order-number' },
-      { title: 'Waiting for the order', href: '/docs/1b-building-workflow-creating-workflow-waiting-for-order' },
-      { title: 'Emitting events', href: '/docs/1b-building-workflow-creating-workflow-emitting-events' },
-      { title: 'Testing', href: '/docs/1b-building-workflow-creating-workflow-testing' },
-      { title: 'Module review', href: '/docs/1b-building-workflow-creating-module-review' },
+      { title: 'Overview', href: '/docs/1b-building-workflow-overview' },
+      { title: 'Adding an order number', href: '/docs/1b-building-workflow-adding-order-number' },
+      { title: 'Waiting for the order', href: '/docs/1b-building-workflow-waiting-for-order' },
+      { title: 'Emitting events', href: '/docs/1b-building-workflow-emitting-events' },
+      { title: 'Testing', href: '/docs/1b-building-workflow-testing' },
+      { title: 'Module review', href: '1b-building-workflow-module-review' },
     ],
   },
   {
     title: '2. Routing Events',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Overview', href: '/docs/routing-events-overview' },
+      { title: 'Log All', href: '/docs/routing-events-log-all' },
+      { title: 'New Order', href: '/docs/routing-events-new-order' },
+      { title: 'Workflow Started', href: '/docs/routing-events-workflow-started' },
+      { title: 'Order Manager Workflow', href: '/docs/routing-events-order-manager-workflow' },
+      { title: 'Waiting Completion', href: '/docs/routing-events-waiting-completion' },
+      { title: 'End-to-end test', href: '/docs/routing-events-end-to-end-test' },
     ],
   },
   {
@@ -137,7 +141,7 @@ function Header({ navigation }) {
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
-        <Link href="https://github.com" className="group" aria-label="GitHub">
+        <Link href="https://github.com/tmhn/serverlesspresso-workshop-docs" className="group" aria-label="GitHub">
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
       </div>

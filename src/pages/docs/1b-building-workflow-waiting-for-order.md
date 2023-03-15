@@ -1,5 +1,5 @@
 ---
-title: Building The Workflow - Part 2
+title: Waiting For The Order
 description: An overview of building the Step Functions workflow
 ---
 
