@@ -65,33 +65,33 @@ const navigation = [
   {
     title: '3. Configuring the frontends',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Overview', href: '/docs/configuring-frontends-overview' },
+      { title: 'Publishing events to the frontend', href: '/docs/configuring-frontends-publishing-events' },
+      { title: 'The Display App', href: '/docs/configuring-frontends-the-display-app' },
+      { title: 'The Barista App', href: '/docs/configuring-frontends-the-barista-app' },
+      { title: 'The Customer App', href: '/docs/configuring-frontends-the-customer-app' },
+      { title: 'End-to-end test', href: '/docs/configuring-frontends-end-to-end-test' },
     ],
   },
   {
     title: '4. Advanced',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Overview', href: '/docs/advanced-overview' },
+      { title: 'Metrics SQS & DynamoDB', href: '/docs/advanced-metrics-sqs-dynamodb' },
+      { title: 'Metrics SQS & CloudWatch', href: '/docs/advanced-metrics-sqs-cloudwatch' },
+      { title: 'Order Processor Workflow', href: '/docs/advanced-metrics-order-processor-workflow' },
     ],
   },
   {
     title: 'Cleanup',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Overview', href: '/docs/cleanup-overview' }
     ],
   },
   {
     title: 'After the workshop',
     links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Overview', href: '/docs/after-the-workshop' }
     ],
   },
 ]
