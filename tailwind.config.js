@@ -22,8 +22,12 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        display: ['Lexend', ...defaultTheme.fontFamily.sans],
+        sans: ['Figtree', 'Inter', ...defaultTheme.fontFamily.sans],
+        // display: ['Lexend', ...defaultTheme.fontFamily.sans],
+        display: ['Figtree', ...defaultTheme.fontFamily.sans],
+        figtree: ['Figtree', ...defaultTheme.fontFamily.sans],
+        figtreeHeading: ['Figtree-Black', ...defaultTheme.fontFamily.sans],
+        circularBold: ['Circular-Bold']
       },
       maxWidth: {
         '8xl': '88rem',

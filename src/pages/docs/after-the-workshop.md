@@ -3,7 +3,7 @@ title: After The Workshop
 description: After you've completed the workshop, follow these steps
 ---
 
-### Thanks for joining today! ###
+## Thanks for joining today!
 
 This workshop shows how you can build a production-scale application that uses Step Functions for orchestration, and EventBridge for choreography. You can also use a serverless approach for a range of other workloads, such as:
 

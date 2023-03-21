@@ -1,8 +1,10 @@
 ---
 title: Getting started
-pageTitle: CacheAdvance - Never miss the cache again.
+pageTitle: Serverlesspresso - Building a serverless coffee shop.
 description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
 ---
+
+## Welcome to Serverlesspresso
 
 [![See Serverlesspresso](/play.png)](https://youtu.be/M6lPZCRCsyA)
 
@@ -43,7 +45,7 @@ JavaScript executes in the frontend browser application sending to and receiving
 
 See the diagram below for the complete architecture.
 
-![Overall architecture](/images/se-0-architecture.png)
+![Overall architecture](/introduction-1.png)
 
 [amplify-console]: https://aws.amazon.com/amplify/console/
 [cognito]: https://aws.amazon.com/cognito/

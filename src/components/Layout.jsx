@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 import { Hero } from '@/components/Hero'
+import { SecondaryHero } from '@/components/SecondaryHero'
 import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
@@ -218,7 +219,8 @@ export function Layout({ children, title, tableOfContents }) {
     <>
       <Header navigation={navigation} />
 
-      {isHomePage && <Hero />}
+      {/* {isHomePage && <Hero />} */}
+      {isHomePage && <SecondaryHero />}
 
       <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
@@ -242,7 +244,7 @@ export function Layout({ children, title, tableOfContents }) {
                   </p>
                 )}
                 {title && (
-                  <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+                  <h1 className="font-display font-bold text-3xl tracking-tight text-slate-900 dark:text-white">
                     {title}
                   </h1>
                 )}
